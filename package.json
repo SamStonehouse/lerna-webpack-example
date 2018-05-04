@@ -6,7 +6,8 @@
 	"author": "",
 	"scripts": {
 		"dev": "webpack-dev-server --mode development --config webpack/webpack.config.js",
-		"prod": "webpack --mode production --config webpack/webpack.config.js"
+		"prod": "webpack --mode production --config webpack/webpack.config.js",
+		"bootstrap": "lerna bootstrap --hoist"
 	},
 	"devDependencies": {
 		"autoprefixer": "^8.2.0",
