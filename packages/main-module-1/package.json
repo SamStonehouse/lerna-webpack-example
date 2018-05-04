@@ -1,0 +1,15 @@
+{
+  "name": "@lerna-test/main-module-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "@lerna-test/module-1": "^1.0.0",
+    "@lerna-test/module-2": "^1.0.0",
+    "@lerna-test/module-3": "^1.0.0",
+    "normalize.css": "^8.0.0"
+  }
+}
