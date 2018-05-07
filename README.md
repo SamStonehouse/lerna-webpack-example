@@ -4,12 +4,14 @@
 
 - `npm install` - install dependencies
 
-- `npm run bootstrap` - runs lerna bootstrap which hoists and links dependencies
+- `npm run bootstrap && run bootstrap-hoist` - runs lerna bootstrap which installs dependencies and then hoists them so common modules are shared
 
-- `npm run dev`- runs webpack-dev-server
 
 ## Next steps
 
+- Create local package for eslint config
+- Create local package for postcss.config.js
+- Add eslint to Webpack directory
 - Update webpack to remove final issues regarding upgrade to webpack 4
 - Change webpack builds to be for each main module
 - Create a main module which is both built on it's own and required as part of a package

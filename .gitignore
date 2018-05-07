@@ -1,6 +1,10 @@
+# All node_modules folders
 node_modules/
 
+# All the dist folders used
 dist/
+dev-dist/
+prod-dist/
 
-
+# All log files
 *.log

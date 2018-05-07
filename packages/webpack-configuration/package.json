@@ -1,13 +1,10 @@
 {
-	"name": "lerna-webpack-example",
-	"version": "0.0.1",
-	"description": "",
+	"name": "@lerna-test/webpack-configuration",
+	"version": "1.0.0",
+	"description": "Common webpack configuration files for @lerna-test",
+	"main": "index.js",
+	"author": "Sam Stonehouse",
 	"license": "ISC",
-	"author": "",
-	"scripts": {
-		"bootstrap": "lerna bootstrap",
-		"bootstrap-hoist": "lerna bootstrap --hoist"
-	},
 	"devDependencies": {
 		"autoprefixer": "^8.2.0",
 		"babel-loader": "^7.1.4",
@@ -16,6 +13,7 @@
 		"babel-preset-es2016": "^6.24.1",
 		"babel-preset-es2017": "^6.24.1",
 		"chai": "^4.1.2",
+		"clean-webpack-plugin": "^0.1.19",
 		"copy-webpack-plugin": "^4.5.1",
 		"css-loader": "^0.28.11",
 		"duplicate-package-checker-webpack-plugin": "^3.0.0",
@@ -25,7 +23,6 @@
 		"eslint-plugin-import": "^2.11.0",
 		"eslint-plugin-jsx-a11y": "^6.0.3",
 		"eslint-plugin-react": "^7.7.0",
-		"lerna": "^2.11.0",
 		"mini-css-extract-plugin": "^0.4.0",
 		"mocha": "^5.1.0",
 		"mocha-webpack": "^2.0.0-beta.0",
