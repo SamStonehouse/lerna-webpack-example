@@ -69,27 +69,7 @@ const build = (ROOT_DIR, SOURCE_DIR, BUILD_DIR) => {
 					to: path.join(BUILD_DIR, 'assets'),
 				},
 			]),
-		],
-		devServer: {
-			compress: true,
-			port: 8080,
-			contentBase: BUILD_DIR,
-			publicPath: BUILD_DIR,
-			quiet: false,
-			noInfo: false,
-			stats: {
-				assets: false,
-				children: false,
-				chunks: false,
-				chunkModules: false,
-				colors: true,
-				entrypoints: false,
-				hash: false,
-				modules: false,
-				timings: false,
-				version: false,
-			},
-		},
+		]
 	}
 };
 

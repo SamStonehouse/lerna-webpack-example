@@ -1,15 +1,11 @@
-import _ from 'lodash';
-
-import { testFunc } from 'module-1';
-import { testFunc2 } from 'module-2';
-import { testFunc3 } from 'module-3';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 import '../styles/main.scss';
 
-console.log('main module', _.defaults({ a: 3 }, { a: 3, b: 3 }));
+import Root from './components/root';
 
-testFunc();
-testFunc2();
-testFunc3();
-
-console.log('done main 2');
+ReactDOM.render(
+	<Root />,
+	document.getElementById('root'),
+);

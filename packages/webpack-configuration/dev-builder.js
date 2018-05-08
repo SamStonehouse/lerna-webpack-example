@@ -15,7 +15,30 @@ const devBuilder = (ROOT_DIR, SOURCE_DIR, BUILD_DIR) => {
 
 	return merge(common, {
 		mode: 'development',
-		devtool: "inline-cheap-module-source-map"
+		devtool: "inline-cheap-module-source-map",
+		devServer: {
+			compress: true,
+			port: 8080,
+			contentBase: BUILD_DIR,
+			publicPath: BUILD_DIR,
+			quiet: false,
+			noInfo: false,
+			stats: {
+				assets: false,
+				children: false,
+				chunks: false,
+				chunkModules: false,
+				colors: true,
+				entrypoints: false,
+				hash: false,
+				modules: false,
+				timings: false,
+				version: false,
+			},
+			historyApiFallback: {
+				index: 'index.html'
+			}
+		},
 	});
 };
 

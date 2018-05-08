@@ -23,6 +23,9 @@
     "react/prefer-stateless-function": "warn",
     "prefer-destructuring": "off",
     "no-useless-return": "off",
-    "class-methods-use-this": "off"
+    "class-methods-use-this": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/require-default-props": "warn",
+    "react/no-typos": "warn"
   }
 }

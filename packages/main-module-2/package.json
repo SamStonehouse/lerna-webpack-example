@@ -5,11 +5,29 @@
   "main": "index.js",
   "author": "",
   "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack/webpack.dev.js",
+    "prod": "webpack --config webpack/webpack.prod.js",
+    "test": "mocha-webpack --webpack-config webpack/webpack.test.js \"source/tests/*\"",
+    "watch-tests": "mocha-webpack --webpack-config webpack/webpack.test.js \"source/tests/*\" --watch"
+  },
+  "devDependencies": {
+    "@lerna-test/webpack-configuration": "^1.0.0",
+    "mocha-webpack": "^2.0.0-beta.0",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.3"
+  },
   "dependencies": {
-    "lodash": "^4.17.10",
     "@lerna-test/module-1": "^1.0.0",
     "@lerna-test/module-2": "^1.0.0",
     "@lerna-test/module-3": "^1.0.0",
-    "normalize.css": "^8.0.0"
+    "lodash": "^4.17.10",
+    "normalize.css": "^8.0.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-router-dom": "^4.2.2",
+    "react-router-prop-types": "^1.0.3"
   }
 }
